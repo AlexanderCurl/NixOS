@@ -22,7 +22,6 @@
     pavucontrol
     nwg-look
     nwg-displays
-    kwalletmanager
     libsForQt5.kwallet-pam
     libsForQt5.qtstyleplugin-kvantum
     hyprshot
