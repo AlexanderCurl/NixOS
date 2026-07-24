@@ -70,6 +70,12 @@
     enableSSHSupport = true;
   };
 
+  # --- HYPRLAND ---
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true; 
 
@@ -85,6 +91,7 @@
     egl-wayland # EGL Wayland support for Nvidia
     ffmpeg
     fastfetch
+    kitty
     gst_all_1.gst-plugins-base
     gst_all_1.gst-plugins-good
     gst_all_1.gst-plugins-bad
