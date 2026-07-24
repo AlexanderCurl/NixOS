@@ -8,6 +8,5 @@
 
   xdg.configFile."hypr" = {
     source = "${inputs.alexDotfiles}/hypr"; 
-    recursive = true; 
   };
 }
