@@ -22,8 +22,6 @@
     pavucontrol
     nwg-look
     nwg-displays
-    libsForQt5.kwallet-pam
-    libsForQt5.qtstyleplugin-kvantum
     hyprshot
     hyprpicker
     hyprcursor
