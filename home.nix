@@ -3,6 +3,7 @@
 {
   imports = [
     inputs.dms.homeModules.dankMaterialShell.default
+    inputs.alexDotfiles.homeManagerModules.default
 
     ./modules/home/hyprland.nix
     ./modules/home/brave.nix
