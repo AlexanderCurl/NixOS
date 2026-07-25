@@ -16,7 +16,7 @@
 
     alexDotfiles = {
       url = "github:AlexanderCurl/Dotfiles";
-      flake = false;
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
