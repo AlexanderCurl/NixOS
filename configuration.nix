@@ -34,6 +34,18 @@
     powerManagement.enable = false;
   };
 
+  # --- LOCALE & KEYBOARD ---
+  i18n.defaultLocale = "en_GB.UTF-8";
+
+  # Configure console keymap (for TTYs before the graphical environment loads)
+  console.keyMap = "uk";
+
+  # Configure the graphical keyboard layout (for X11 and Wayland/Hyprland)
+  services.xserver.xkb = {
+    layout = "gb";
+    variant = "";
+  };
+
   # --- PIPEWIRE & AUDIO ---
   security.rtkit.enable = true;
   services.pipewire = {
@@ -101,7 +113,7 @@
 
   users.users.alexc = {
     isNormalUser = true;
-    description = "Alex C";
+    description = "AlexC";
     extraGroups = [ "networkmanager" "wheel" "audio" "video" ];
   };
 
