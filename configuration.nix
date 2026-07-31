@@ -10,8 +10,6 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_cachyos;
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
   # --- NIX SETTINGS & BINARY CACHES ---
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
