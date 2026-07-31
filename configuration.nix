@@ -8,6 +8,7 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernePackages = pkgs.linuxPackages_cachyos;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -32,6 +33,7 @@
     open = true;
     nvidiaSettings = true;
     powerManagement.enable = false;
+    package = config.boot.kernelPackages.nvidiaPackages.latest;
   };
 
   # --- LOCALE & KEYBOARD ---

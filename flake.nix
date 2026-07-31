@@ -2,10 +2,12 @@
   description = "NixOS configuration for alexc (sasuke)";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     
     home-manager = {
-      url = "github:nix-community/home-manager/release-26.05";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -19,10 +21,10 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, dms, ... }@inputs: {
+  outputs = { self, nixpkgs, chaotic, home-manager, dms, ... }@inputs: {
     nixosConfigurations.sasuke = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      
+         
       specialArgs = { inherit inputs; };
       
       modules = [
@@ -30,6 +32,8 @@
         
         dms.nixosModules.default
         
+        chaotic.nixosModules.default
+
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
