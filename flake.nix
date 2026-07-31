@@ -1,6 +1,18 @@
 {
   description = "NixOS configuration for alexc (sasuke)";
 
+# Force Nix to use these binary caches when evaluating the flake
+  nixConfig = {
+    extra-substituters = [
+      "https://nyx-cache.chaotic.cx"
+      "https://nix-community.cachix.org"
+    ];
+    extra-trusted-public-keys = [
+      "nyx-cache.chaotic.cx:dJxTrgMC3V3cFfyIiBQDQorG6k1LsqurH/srpMSq7qk="
+      "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+    ];
+  };
+
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
