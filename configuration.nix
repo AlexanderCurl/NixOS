@@ -97,7 +97,7 @@
   environment.systemPackages = with pkgs; [
     git
     neovim
-    mate.mate-polkit # Required by DMS
+    pkgs.mate-polkit # Required by DMS
     lm_sensors
     lsb-release
     linuxHeaders
