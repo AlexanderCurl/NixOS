@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  home.packages = with.pkgs; [
+  home.packages = with pkgs; [
     brave-origin
     discord
     slack
@@ -22,7 +22,6 @@
     nwg-displays
     pavucontrol
     hyprshot
-    hyprland-guiutils
     hyprwayland-scanner
     hyprland-qtutils
     hyprcursor
