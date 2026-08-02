@@ -112,24 +112,11 @@
   environment.systemPackages = with pkgs; [
     git
     neovim
-    mate-polkit # Required by DMS
     lm_sensors
     lsb-release
     linuxHeaders
     linux-firmware
     egl-wayland # EGL Wayland support for Nvidia
-    ffmpeg
-    fastfetch
-    kitty-bin
-    openrazer-daemon
-    polychromatic
-    kdePackages.kdeconnect-kde
-    nextcloud-client
-    gst_all_1.gst-plugins-base
-    gst_all_1.gst-plugins-good
-    gst_all_1.gst-plugins-bad
-    gst_all_1.gst-plugins-ugly
-    gst_all_1.gst-libav
   ];
 
   users.users.alexc = {

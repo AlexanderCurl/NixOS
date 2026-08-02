@@ -5,31 +5,12 @@
     inputs.dms.homeModules.dankMaterialShell.default
     inputs.alexDotfiles.homeManagerModules.default
 
-    ./modules/home/brave.nix
-    ./modules/home/discord.nix
-    ./modules/home/slack.nix
+    ./modules/home/packages.nix
   ];
-
 
   programs.dankMaterialShell.enable = true;
   home.username = "alexc";
   home.homeDirectory = "/home/alexc";
-
-  # --- USER PACKAGES ---
-  home.packages = with pkgs; [
-    kitty
-    easyeffects
-    pavucontrol
-    nwg-look
-    nwg-displays
-    hyprshot
-    hyprpicker
-    hyprcursor
-    hyprwayland-scanner
-    
-    # Catch-all for less common/custom requests (assuming they're packaged in latest nixpkgs)
-    # opendeck hyprland-guiutils hyprgraphics hyprwire
-  ];
 
   home.stateVersion = "26.05";
   programs.home-manager.enable = true;
