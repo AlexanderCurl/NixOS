@@ -7,7 +7,7 @@
     slack
     kdePackages.kdeconnect-kde
     openrazer-daemon
-    kitty-bin
+    kitty
     fastfetch
     mate-polkit
     polychromatic
