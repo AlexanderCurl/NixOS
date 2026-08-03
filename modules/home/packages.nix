@@ -16,6 +16,7 @@
     ytmdesktop
     teams-for-linux
     teamspeak6-client
+    lan-mouse
     prismlauncher
     easyeffects
     nwg-look
