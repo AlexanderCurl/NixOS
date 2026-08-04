@@ -26,5 +26,14 @@
     hyprwayland-scanner
     hyprland-qtutils
     hyprcursor
+    tailscale
+    jellyfin-desktop
+    bitwarden-desktop
+    audacity
+    protonup-qt
+    obs-studio
+    qt6Packages.qtstyleplugin-kvantum
+    popsicle
+    streamcontroller
   ];
 }
